@@ -5,7 +5,7 @@ services:
     image: gcr.io/datadoghq/agent:latest
     ports:
       - 8126:8126/tcp
-      - 8125:8125/tcp
+      - 8125:8125/udp
     environment:
      - DD_API_KEY=${DD_API_KEY}
      - DD_HOSTNAME=james-laptop
